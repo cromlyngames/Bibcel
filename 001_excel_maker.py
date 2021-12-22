@@ -33,18 +33,20 @@ def Initial_col_namer(target_bib):
             list_keyz.append(k)
     set_keyz = set(list_keyz)
     sl_keyz = list(set_keyz) #cast it back to indexed list for easier iterations later
+    sl_keyz.sort()
     #print(set_keyz)
     
-    first_cols =['title', 'source_bib', 'read', 'value']
+    first_cols =['ID', 'title', 'source_bib', 'read', 'value']
     
-    keywordz = [] 
+    keywordz = ['Keyword_count'] 
     for b in bib_database.entries:
         try:
             keywrd_str =b['keywords']
         except:
             keywrd_str = ''  #not all enteries have the keywords entry
         #spilt the string into words, and append to overall list
-        keyword_list = keywrd_str.split(';')
+        keywrd_str.replace('; ', ', ')  #replace ; with ,
+        keyword_list = keywrd_str.split(',') # and split string at ,
         for w in keyword_list:
             keywordz.append(w)
     set_wordz = set(keywordz) #cast it back to indexed list for easier iterations later
