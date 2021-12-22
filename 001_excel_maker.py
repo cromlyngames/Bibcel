@@ -45,8 +45,8 @@ def Initial_col_namer(target_bib):
         except:
             keywrd_str = ''  #not all enteries have the keywords entry
         #spilt the string into words, and append to overall list
-        keywrd_str.replace('; ', ', ')  #replace ; with ,
-        keyword_list = keywrd_str.split(',') # and split string at ,
+        keywrd_str.replace(', ', '; ')  #replace , with ;
+        keyword_list = keywrd_str.split(';') # and split string at ;
         for w in keyword_list:
             keywordz.append(w)
     set_wordz = set(keywordz) #cast it back to indexed list for easier iterations later
