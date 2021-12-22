@@ -8,14 +8,15 @@ In two years time, I want to be able to easily locate pertinant information.
 
 built on pybibtex and xlwings
 
-##Contents:
-globber_script : barebones trivial function to merge a lot of downlaoded bibtex refs into a single file
+## Contents:
+globber_script : 
+* barebones trivial function to merge a lot of downlaoded bibtex refs into a single file
 
 001_excel_maker : currently two functions: 
-*reads in a bibtex file to create an excel sheet with column headers for entry info and keywords 
-*reads in a bibtex file and appends it's data to the next empty row
+* reads in a bibtex file to create an excel sheet with column headers for entry info and keywords 
+* reads in a bibtex file and appends it's data to the next empty row
 
-##Todo:
+## Todo:
 Add a better coloumn header finder to the append bibtex file function
 Add a duplicate cull function
 Improve keyword splitter.
