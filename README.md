@@ -3,7 +3,7 @@ Python tools for linking bibtex files and an excel reading list manager.
 
 ## Design Statement
 
-I want to maintain my reading list of papers and articles. These will be split into smaller themed bibtex files, rather than have a single clunky one. I want to have a single speadsheet tracking these, wether I've read them, found them or predict that they'll be valable, and tracking keywords from the author and added by me.
+I want to maintain my reading list of papers and articles. These will be split into smaller themed bibtex files, rather than have a single clunky one. I want to have a single speadsheet tracking these, whether I've read them, found them or predict that they'll be valable, and tracking keywords from the author and added by me.
 In two years time, I want to be able to easily locate pertinant information.
 
 built on python-bibtexparser and xlwings
@@ -20,7 +20,7 @@ globber_script :
 
 001_excel_maker : currently two functions: 
 * reads in a bibtex file to create an excel sheet with column headers for entry info and keywords 
-* reads in a bibtex file and appends it's data to the next empty row
+* reads in a bibtex file and appends the data to the next empty row(s)
 
 ## Todo:
 * Add a better coloumn header finder to the append bibtex file function
