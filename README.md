@@ -17,7 +17,7 @@ globber_script :
 * reads in a bibtex file and appends it's data to the next empty row
 
 ## Todo:
-Add a better coloumn header finder to the append bibtex file function
-Add a duplicate cull function
-Improve keyword splitter.
-Add new function to write out updated bibtex files from the excel sheet info (eg to allow bulk update of entryid)
+* Add a better coloumn header finder to the append bibtex file function
+* Add a duplicate cull function
+* Improve keyword splitter. (currently works with ; only. Some bibtex use , ). There's a regex option in bibtex parser that might be valid if I can figure it out
+* Add new function to write out updated bibtex files from the excel sheet info (eg to allow bulk update of entryid)
